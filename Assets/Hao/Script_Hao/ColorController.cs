@@ -13,6 +13,7 @@ public class ColorController : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0)) // Kiểm tra khi người chơi nhấn chuột trái, để để test, có thể bỏ sau khi ok
         {
             RandomizeColors(); // Gọi hàm random màu 
@@ -21,14 +22,18 @@ public class ColorController : MonoBehaviour
 
     void RandomizeColors()
     {
-        foreach (Transform child in transform)
+        if (availableColors != null)
         {
-            SpriteRenderer squareRenderer = child.GetComponent<SpriteRenderer>(); // Lấy reference tới SpriteRenderer của hình vuông
-            if (squareRenderer != null)
+            foreach (Transform child in transform)
             {
-                int randomIndex = Random.Range(0, availableColors.Length); // Chọn ngẫu nhiên index trong mảng màu
-                squareRenderer.color = availableColors[randomIndex]; // Thay đổi màu của hình vuông con
+                SpriteRenderer squareRenderer = child.GetComponent<SpriteRenderer>(); // Lấy reference tới SpriteRenderer của hình vuông
+                if (squareRenderer != null)
+                {
+                    int randomIndex = Random.Range(0, availableColors.Length); // Chọn ngẫu nhiên index trong mảng màu
+                    squareRenderer.color = availableColors[randomIndex]; // Thay đổi màu của hình vuông con
+                }
             }
         }
+
     }
 }

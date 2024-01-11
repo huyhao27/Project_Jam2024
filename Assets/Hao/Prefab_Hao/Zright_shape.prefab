@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f54878c2e50b6c48b8cf83896b5daa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  availableColors: []
 --- !u!1001 &567616945781412790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59,7 +60,7 @@ PrefabInstance:
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
@@ -133,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
@@ -207,12 +208,12 @@ PrefabInstance:
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
@@ -281,12 +282,12 @@ PrefabInstance:
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}

@@ -14,27 +14,35 @@ public class PlayerContronller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
+        PlayerMoveAndRotate();
 
+    }
+
+    void PlayerMoveAndRotate()
+    {
+        if (Input.GetKeyDown(KeyCode.R)) // xoay b?ng nút R
+        {
             transform.rotation = Quaternion.Euler(0, 0, transform.localEulerAngles.z - 90f);
         }
+
+        //di chuy?n lên xu?ng trái ph?i
+        Vector3 dir = Vector3.zero;
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            transform.position += Vector3.left;
+            dir = Vector3.left;
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            transform.position += Vector3.right;
+            dir = Vector3.right;
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            transform.position += Vector3.up;
+            dir = Vector3.up;
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            transform.position += Vector3.down;
+            dir = Vector3.down;
         }
-
+        transform.position += dir;
     }
 }

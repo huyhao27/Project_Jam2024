@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f54878c2e50b6c48b8cf83896b5daa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  availableColors: []
 --- !u!1001 &48400813060510225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59,12 +60,12 @@ PrefabInstance:
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
@@ -133,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
@@ -185,6 +186,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square_unit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9223360227394575475, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -207,7 +213,7 @@ PrefabInstance:
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1357844387234677214, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
