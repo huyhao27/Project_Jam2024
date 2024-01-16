@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Square
+  - Wall Right
+  - Wall Left
+  - Wall Top
+  - Wall Bottom
   layers:
   - Default
   - TransparentFX

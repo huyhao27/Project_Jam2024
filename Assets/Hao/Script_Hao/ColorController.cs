@@ -22,18 +22,30 @@ public class ColorController : MonoBehaviour
 
     void RandomizeColors()
     {
+
         if (availableColors != null)
         {
             foreach (Transform child in transform)
-            {
-                SpriteRenderer squareRenderer = child.GetComponent<SpriteRenderer>(); // Lấy reference tới SpriteRenderer của hình vuông
-                if (squareRenderer != null)
-                {
-                    int randomIndex = Random.Range(0, availableColors.Length); // Chọn ngẫu nhiên index trong mảng màu
-                    squareRenderer.color = availableColors[randomIndex]; // Thay đổi màu của hình vuông con
-                }
-            }
-        }
 
+
+                foreach (Transform c in transform)
+                {
+                    if (availableColors.Length != 0)
+
+
+                    {
+                        SpriteRenderer squareRenderer = child.GetComponent<SpriteRenderer>(); // Lấy reference tới SpriteRenderer của hình vuông
+                        if (squareRenderer != null)
+                        {
+                            int randomIndex = Random.Range(0, availableColors.Length); // Chọn ngẫu nhiên index trong mảng màu
+                            squareRenderer.color = availableColors[randomIndex]; // Thay đổi màu của hình vuông con
+                        }
+                    }
+
+                }
+
+
+
+        }
     }
 }
