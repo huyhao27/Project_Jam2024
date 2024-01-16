@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6071310662754492503}
   - component: {fileID: 5138809860513797893}
+  - component: {fileID: 440001485709369958}
   m_Layer: 0
   m_Name: Triange_shape
   m_TagString: Untagged
@@ -49,6 +50,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableColors: []
+--- !u!114 &440001485709369958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3669650361178996602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ae435b937ee8b49a57d01fea071923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &48400813060510225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,6 +124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Square_unit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588372295258112485, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -185,6 +203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Square_unit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588372295258112485, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9223360227394575475, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
@@ -263,7 +286,12 @@ PrefabInstance:
     - target: {fileID: 2377652692026119842, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_Name
-      value: Square_unit (3)
+      value: Square_unitCenter (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588372295258112485, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -338,6 +366,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Square_unit
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588372295258112485, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

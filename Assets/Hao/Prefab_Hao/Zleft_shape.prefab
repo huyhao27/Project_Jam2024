@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7118996102089607054}
   - component: {fileID: -1071996293866386575}
+  - component: {fileID: 8749013546473798362}
   m_Layer: 0
   m_Name: Zleft_shape
   m_TagString: Untagged
@@ -49,6 +50,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableColors: []
+--- !u!114 &8749013546473798362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954513545192882628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ae435b937ee8b49a57d01fea071923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2042494684475252623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -184,7 +197,7 @@ PrefabInstance:
     - target: {fileID: 2377652692026119842, guid: 9fbaba84b31e72c4496850ab91bbbc8e,
         type: 3}
       propertyPath: m_Name
-      value: Square_unit (1)
+      value: Square_unitCenter (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
