@@ -10,11 +10,13 @@ using static UnityEditor.Progress;
 public class PlayerContronller : MonoBehaviour
 {
     List<Transform> squares = new List<Transform>();
+    GameObject shape;
     Transform centerSquare;
     void Start()
     {
+        shape = FindObjectOfType<Shape>().gameObject;
         // lay danh sach cac thanh phan con
-        foreach (Transform square in GetComponentInChildren<Transform>())
+        foreach (Transform square in shape.GetComponentInChildren<Transform>())
         {
             squares.Add(square);
             if (square.name.IndexOf("Center") != -1)
@@ -33,24 +35,25 @@ public class PlayerContronller : MonoBehaviour
 
     }
 
+
     void PlayerMoveAndRotate()
     {
         if (Input.GetKeyDown(KeyCode.R)) // xoay bang nut R
         {
+
             foreach (Transform t in squares)
             {
                 t.transform.SetParent(null); // dua tung cai ra ngoai
             }
-            transform.position = centerSquare.transform.position; // cho vi tri playercontroller bang vi tri square trung tam
+            shape.transform.position = centerSquare.transform.position;
+            transform.position = shape.transform.position; // cho vi tri playercontroller bang vi tri trung tam
             foreach (Transform t in squares)
             {
-                t.transform.SetParent(transform); // dua vao lai
+                t.transform.SetParent(shape.transform); // dua vao lai
             }
-            transform.rotation = Quaternion.Euler(0, 0, transform.localEulerAngles.z - 90f); // xoay
-
-
+            shape.transform.rotation = Quaternion.Euler(0, 0, transform.localEulerAngles.z - 90f); // xoay
+            transform.rotation = shape.transform.rotation;
         }
-
         //di chuyen len xuong trai phai
         Vector3 dir = Vector3.zero;
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -73,5 +76,7 @@ public class PlayerContronller : MonoBehaviour
         {
             t.transform.position += dir;
         }
+
     }
+
 }

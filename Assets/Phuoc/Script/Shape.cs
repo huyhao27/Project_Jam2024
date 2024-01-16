@@ -8,16 +8,8 @@ public class Shape : MonoBehaviour
 
     private void Awake()
     {
-        // chuyen cac square thanh child cua playercontroller
-        foreach (Transform square in GetComponentInChildren<Transform>())
-        {
-            squares.Add(square);
-        }
-        foreach (Transform square in squares)
-        {
-            square.SetParent(FindObjectOfType<PlayerContronller>().transform);
-        }
-        Destroy(gameObject);
+        transform.position = FindObjectOfType<PlayerContronller>().transform.position;
+        transform.rotation = FindObjectOfType<PlayerContronller>().transform.rotation;
     }
 
 }
